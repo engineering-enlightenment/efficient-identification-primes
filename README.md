@@ -267,7 +267,7 @@ So if we exclude 2 and 3 and include 1, which happens automatically if we stick 
 
 Ideally, we will have a single symbol to refer to each of the eight codes, instead of three symbols linked together in a sequence. We want one digit instead of three to avoid confusion and because we do not want the symbol for a code to be broken apart.
 
-We can have a single symbol for each of the eight codes by using 24 as our number base. When a number base requires symbols beyond the usual set (0 - 9), the additional numbers are represented by something else that is already available to write and type, such as letters. For base 24, the number 10 is represented by A and the sequence continues until 23 which is represented by N.
+We can have a single symbol for each of the eight codes by using 24 as our number base. When a number base requires symbols beyond the usual set (0 - 9), the additional numbers are represented by something else that is already available to write and type, such as letters. For base 24, the number 10 is represented by A and the sequence continues until 23 which is represented by N. The notation B24 is used to refer to the last digit of a number translated into base 24 and the value can be attached after a colon, such as B24:7 which is notation for a base 24 value of 7.
 
 | Number | B3:6:8 Code | B24 Code |
 | ----------- | ----------- | ----------- |
@@ -296,6 +296,41 @@ We can have a single symbol for each of the eight codes by using 24 as our numbe
 | **22** |     | M |
 | **23** | 257 | N |
 | **24** |     | 0 |
+
+We now have a set of eight core identities which can be used as archetypes (templates of B24 number types) that continue to interact with each other in the same manner all throughout the number line.
+
+- 1
+- 5
+- 7
+- B (aka 11)
+- D (aka 13)
+- H (aka 17)
+- J (aka 19)
+- N (aka 23)
+
+## Example Interaction of Core Prime Identities
+
+The tendency of these identities to form products of type B24:1 is a good initial example of how the core eight identities interact with each other. Every product of two of the same type will be a type B24:1, and this includes every even-numbered exponent of any of the types.
+
+If we use 13 (B24:D) and 37 (B24:D) and multiply them together, their product 13 x 37 = 481 (B24:1) is a B24 type 1, as expected.
+
+If we square 5 (B24:5) we get 5² = 25 (B24:1) and if we raise 7 (B24:7) to the fourth we get 7⁴ = 2401 (B24:1), which is also a B24 type 1, as expected.
+
+Because more combinations of these identities make type 1 than anything else, and because combinations cannot be primes, we should see fewer "1 primes" relative to other types as we go further along the number line.
+
+This is, in fact, what we see. 
+
+
+
+## Cyclical B24 Number System
+
+
+
+## Primes Bracket Multiples of Six
+
+
+## Efficient Identification of Primes
+
 
 
 
