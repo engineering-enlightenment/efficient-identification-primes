@@ -26,31 +26,31 @@ The base number defines how many symbols are available to represent values. We a
 
 When we reach the last symbol in any number base and then add one to move to the next number, we put a zero for the last digit and add 1 to the digit next to it on the left. We do this habitually in base 10.
 
-If we only concern ourselves with the last digit, then as we move along the number line in any number base, we see an endless repeating pattern of the symbols of that number base. The following table shows the last digit of a short sequence of numbers in different bases from base 2 through base 12. The standard base 10 version of the numbers are on the left.
+If we only concern ourselves with the last digit, then as we move along the number line in any number base, we see an endless repeating pattern of the symbols of that number base. The following table shows the last digit of a short sequence of numbers in different bases from base 2 through base 10. The standard base 10 version of the numbers are on the left for reference.
 
-| Number | Base2 | Base3 | Base4 | Base5 | Base6 | Base7 | Base8 | Base9 | Base10 | Base11 | Base12 |
-| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 8 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 9 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 10 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 12 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 13 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 14 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 16 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 17 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 18 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 19 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 20 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Number | Base2 | Base3 | Base4 | Base5 | Base6 | Base7 | Base8 | Base9 | Base10 |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| **0** | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| **1** | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| **2** | 0 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 |
+| **3** | 1 | 0 | 3 | 3 | 3 | 3 | 3 | 3 | 3 |
+| **4** | 0 | 1 | 0 | 4 | 4 | 4 | 4 | 4 | 4 |
+| **5** | 1 | 2 | 1 | 0 | 5 | 5 | 5 | 5 | 5 |
+| **6** | 0 | 0 | 2 | 1 | 0 | 6 | 6 | 6 | 6 |
+| **7** | 1 | 1 | 3 | 2 | 1 | 0 | 7 | 7 | 7 |
+| **8** | 0 | 2 | 0 | 3 | 2 | 1 | 0 | 8 | 8 |
+| **9** | 1 | 0 | 1 | 4 | 3 | 2 | 1 | 0 | 9 |
+| **10** | 0 | 1 | 2 | 0 | 4 | 3 | 2 | 1 | 0 |
+| **11** | 1 | 2 | 3 | 1 | 5 | 4 | 3 | 2 | 1 |
+| **12** | 0 | 0 | 0 | 2 | 0 | 5 | 4 | 3 | 2 |
+| **13** | 1 | 1 | 1 | 3 | 1 | 6 | 5 | 4 | 3 |
+| **14** | 0 | 2 | 2 | 4 | 2 | 0 | 6 | 5 | 4 |
+| **15** | 1 | 0 | 3 | 0 | 3 | 1 | 7 | 6 | 5 |
+| **16** | 0 | 1 | 0 | 1 | 4 | 2 | 0 | 7 | 6 |
+| **17** | 1 | 2 | 1 | 2 | 5 | 3 | 1 | 8 | 7 |
+| **18** | 0 | 0 | 2 | 3 | 0 | 4 | 2 | 0 | 8 |
+| **19** | 1 | 1 | 3 | 4 | 1 | 5 | 3 | 1 | 9 |
+| **20** | 0 | 2 | 0 | 0 | 2 | 6 | 4 | 2 | 0 |
 
 
 
