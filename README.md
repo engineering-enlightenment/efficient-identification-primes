@@ -108,8 +108,8 @@ If we only concern ourselves with the numbers that have these eight codes, then 
 
 - a prime (such as `5`, `7`, `23`, `59`, etc.)
 - a product of two or more primes (such as `35`, which is `5 x 7`)
-- a prime raised to an exponent greater than one, which is a product of a prime with itself (such as `25`, which is `5^2^` or `5 x 5`)
-- a product of two or more primes and at least one of them is also raised to an exponent greater than one (such as `175`, which is `7 x 25` or `7 x 5^2^`)
+- a prime raised to an exponent greater than one, which is a product of a prime with itself (such as `25`, which is `5^2` or `5 x 5`)
+- a product of two or more primes and at least one of them is also raised to an exponent greater than one (such as `175`, which is `7 x 25` or `7 x 5^2`)
 
 Because the entire set of numbers with these eight codes follows these rules, we can identify any number as prime if it is not one of the other three types, which are all combinations of only primes.
 
@@ -142,7 +142,7 @@ So if we exclude 2 and 3 and include 1, which happens automatically if we stick 
 | **22** |     |   |   |
 | **23** | 257 | Y |   |
 | **24** |     |   |   |
-| **25** | 111 | N | square (5^2^) |
+| **25** | 111 | N | square (5^2) |
 | **26** |     |   |   |
 | **27** |     |   |   |
 | **28** |     |   |   |
@@ -166,7 +166,7 @@ So if we exclude 2 and 3 and include 1, which happens automatically if we stick 
 | **46** |     |   |   |
 | **47** | 257 | Y |   |
 | **48** |     |   |   |
-| **49** | 111 | N | square (7^2^) |
+| **49** | 111 | N | square (7^2) |
 | **50** |     |   |   |
 | **51** |     |   |   |
 | **52** |     |   |   |
@@ -238,11 +238,11 @@ So if we exclude 2 and 3 and include 1, which happens automatically if we stick 
 | **118** |     |   |   |
 | **119** | 257 | N | product (7 x 17) |
 | **120** |     |   |   |
-| **121** | 111 | N | square (11^2^) |
+| **121** | 111 | N | square (11^2) |
 | **122** |     |   |   |
 | **123** |     |   |   |
 | **124** |     |   |   |
-| **125** | 255 | N | cube (5^3^) |
+| **125** | 255 | N | cube (5^3) |
 | **126** |     |   |   |
 | **127** | 117 | Y |   |
 | **128** |     |   |   |
