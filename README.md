@@ -359,5 +359,5 @@ With the pattern described above, an efficient way to find all primes would be a
 - Move along the number line by whole multiples of 6
 - Keep a list of the prime numbers we find as we go
 - At each multiple of 6, look at the numbers one below and one above
-- Each number in the -1 and +1 pair with either be a prime or the result of combining primes we already have in the list
+- Each number in the -1 and +1 pair will either be a prime or the result of combining primes we already have in the list
 - Whenever we have reached our desired stopping point on the number line, conclude by manually placing 2 and 3 at the start of the list
