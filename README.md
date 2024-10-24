@@ -263,4 +263,40 @@ So if we exclude 2 and 3 and include 1, which happens automatically if we stick 
 | **143** | 257 | N | product (11 x 13) |
 | **144** |     |   |   |
 
+## Base 24 and the Core Prime Identities
+
+Ideally, we will have a single symbol to refer to each of the eight codes, instead of three symbols linked together in a sequence. We want one digit instead of three to avoid confusion and because we do not want the symbol for a code to be broken apart.
+
+We can have a single symbol for each of the eight codes by using 24 as our number base. When a number base requires symbols beyond the usual set (0 - 9), the additional numbers are represented by something else that is already available to write and type, such as letters. For base 24, the number 10 is represented by A and the sequence continues until 23 which is represented by N.
+
+| Number | B3:6:8 Code | B24 Code |
+| ----------- | ----------- | ----------- |
+| **0** |     | 0 |
+| **1** | 111 | 1 |
+| **2** |     | 2 |
+| **3** |     | 3 |
+| **4** |     | 4 |
+| **5** | 255 | 5 |
+| **6** |     | 6 |
+| **7** | 117 | 7 |
+| **8** |     | 8 |
+| **9** |     | 9 |
+| **10** |     | A |
+| **11** | 253 | B |
+| **12** |     | C |
+| **13** | 115 | D |
+| **14** |     | E |
+| **15** |     | F |
+| **16** |     | G |
+| **17** | 251 | H |
+| **18** |     | I |
+| **19** | 113 | J |
+| **20** |     | K |
+| **21** |     | L |
+| **22** |     | M |
+| **23** | 257 | N |
+| **24** |     | 0 |
+
+
+
 
