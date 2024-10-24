@@ -333,10 +333,31 @@ This is, in fact, what we see. The following table shows the counts of each type
 
 ## Primes Bracket Multiples of Six
 
+Every one of these eight identities is one number away from a whole multiple of 6, either in the +1 or the -1 direction. And because every prime number (excluding 2 and 3) is one of the eight identities, we should see that every prime number is either one less or one more than a whole multiple of 6.
+
+Indeed, that is what we see. The following table is a short listing of prime numbers along with their nearest multiple of 6 and a column to display whether each prime is a +1 or a -1 relative to its nearest whole multiple of 6.
+
+| Prime | Nearest 6x | +/- |
+| ----------- | ----------- | ----------- |
+| **13** | 12 | +1 |
+| **47** | 48 | -1 |
+| **2377** | 2376 | +1 |
+| **7919** | 7920 | -1 |
+| **264349** | 264348 | -1 |
+| **803119** | 803118 | +1 |
+| **2219411** | 2219412 | -1 |
+| **6066769** | 6066768 | +1 |
+| **8062001** | 8062002 | -1 |
+| **8062003** | 8062002 | +1 |
+| **9802259** | 9802260 | -1 |
+| **14923933** | 14923932 | +1 |
 
 ## Efficient Identification of Primes
 
+With the pattern described above, an efficient way to find all primes would be as follows:
 
-
-
-
+- Move along the number line by whole multiples of 6
+- Keep a list of the prime numbers we find as we go
+- At each multiple of 6, look at the numbers one below and one above
+- Each number in the -1 and +1 pair with either be a prime or the result of combining primes we already have in the list
+- Whenever we have reached our desired stopping point on the number line, conclude by manually placing 2 and 3 at the start of the list
