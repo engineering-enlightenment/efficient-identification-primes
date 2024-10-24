@@ -98,5 +98,19 @@ The following table shows the B3:6:8 codes for a sequence of numbers from 0 thro
 
 ## The Eight Codes of Primes
 
+Every prime number will be one of these eight codes (111, 113, 115, 117, 251, 253, 255, or 257) with the exception of the numbers 2 and 3. The codes for those numbers are 222 and 033, respectively. Although both 2 and 3 fit the definition of a prime number, which is a number that cannot be divided by anything except the number 1 and itself, they are the only two primes that do not fit the pattern.
+
+The numbers 2 and 3 are not needed to find primes nor to check if a number is prime. But 2 and 3, in the form of their product (`2 x 3 = 6`), do tell us how to efficiently move along the number line in order to follow the pattern. Additional details follow in the text below, of course.
+**
+**It is important to note that every prime number other than 2 and 3 will be one of these eight codes, but not every number that is one of these eight codes will be prime. Those numbers will all be something different but directly related to the primes, and they are also meaningful in the pattern.**
+
+If we only concern ourselves with the numbers that have these eight codes, then we have a closed set. These numbers only relate to each other, and every number with one of the eight codes will be one of the following four types:
+
+- a prime (such as `5`, `7`, `23`, `59`, etc.)
+- a product of two or more primes (such as `35`, which is `5 x 7`)
+- a prime raised to an exponent greater than one, which is a product of a prime with itself (such as `25`, which is `5^2^` or `5 x 5`)
+- a product of two or more primes and at least one of them is also raised to an exponent greater than one (such as `175`, which is `7 x 25` or `7 x 5^2^`)
+
+
 
 
