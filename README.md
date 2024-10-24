@@ -52,5 +52,51 @@ If we only concern ourselves with the last digit, then as we move along the numb
 | **19** | 1 | 1 | 3 | 4 | 1 | 5 | 3 | 1 | 9 |
 | **20** | 0 | 2 | 0 | 0 | 2 | 6 | 4 | 2 | 0 |
 
+## Composite Codes From Bases 3, 6, and 8
+
+If we combine the last digit values for base 3, base 6, and base 8 by listing them in a sequence, then we have a three-digit composite code for every number. The number doesn't change, of course, but this code gives us a useful alternative view of some information that was already contained within the number. It's a different way of looking at any number. For the rest of this paper, I'll use the notation B3:6:8 to refer to these three-digit codes and the codes themselves will just be three digit values and the zeroes will always be shown.
+
+Using information from the table above, we can make the B3:6:8 code for the number 15 by putting together 0, 3, and 7 which are the values from the base 3, base 6, and base 8 columns. This gives us 037 as the B3:6:8 code for the number 15.
+
+As another example, the B3:6:8 code for the number 4 would be 144.
+
+The following table shows the B3:6:8 codes for a sequence of numbers from 0 through 30 with the last digit value from each base included as a reference for how the three-digit code was assembled.
+
+| Number | Base3 | Base6 | Base8 | B3:6:8 Code |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| **0** | 0 | 0 | 0 | 000 |
+| **1** | 1 | 1 | 1 | 111 |
+| **2** | 2 | 2 | 2 | 222 |
+| **3** | 0 | 3 | 3 | 033 |
+| **4** | 1 | 4 | 4 | 144 |
+| **5** | 2 | 5 | 5 | 255 |
+| **6** | 0 | 0 | 6 | 006 |
+| **7** | 1 | 1 | 7 | 117 |
+| **8** | 2 | 2 | 0 | 220 |
+| **9** | 0 | 3 | 1 | 031 |
+| **10** | 1 | 4 | 2 | 142 |
+| **11** | 2 | 5 | 3 | 253 |
+| **12** | 0 | 0 | 4 | 004 |
+| **13** | 1 | 1 | 5 | 115 |
+| **14** | 2 | 2 | 6 | 226 |
+| **15** | 0 | 3 | 7 | 037 |
+| **16** | 1 | 4 | 0 | 140 |
+| **17** | 2 | 5 | 1 | 251 |
+| **18** | 0 | 0 | 2 | 002 |
+| **19** | 1 | 1 | 3 | 113 |
+| **20** | 2 | 2 | 4 | 224 |
+| **21** | 0 | 3 | 5 | 035 |
+| **22** | 1 | 4 | 6 | 146 |
+| **23** | 2 | 5 | 7 | 257 |
+| **24** | 0 | 0 | 0 | 000 |
+| **25** | 1 | 1 | 1 | 111 |
+| **26** | 2 | 2 | 2 | 222 |
+| **27** | 0 | 3 | 3 | 033 |
+| **28** | 1 | 4 | 4 | 144 |
+| **29** | 2 | 5 | 5 | 255 |
+| **30** | 0 | 0 | 6 | 006 |
+
+## The Eight Codes of Primes
+
 
 
