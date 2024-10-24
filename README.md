@@ -318,13 +318,18 @@ If we square 5 (B24:5) we get 5² = 25 (B24:1) and if we raise 7 (B24:7) to the 
 
 Because more combinations of these identities make type 1 than anything else, and because combinations cannot be primes, we should see fewer "1 primes" relative to other types as we go further along the number line.
 
-This is, in fact, what we see. 
+This is, in fact, what we see. The following table shows the counts of each type of prime that are found within each number range.
 
-
-
-## Cyclical B24 Number System
-
-
+| Prime Type | 0 - 5,000 | 0 - 20,000 | 0 - 8,000,000 |
+| ----------- | ----------- | ----------- | ----------- |
+| **1** | 77 | 268 | 67,305 |
+| **5** | 85 | 281 | 67,525 |
+| **7** | 88 | 282 | 67,462 |
+| **B** | 84 | 283 | 67,522 |
+| **D** | 83 | 288 | 67,496 |
+| **H** | 85 | 289 | 67,434 |
+| **J** | 83 | 287 | 67,514 |
+| **N** | 83 | 283 | 67,518 |
 
 ## Primes Bracket Multiples of Six
 
