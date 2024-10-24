@@ -111,6 +111,156 @@ If we only concern ourselves with the numbers that have these eight codes, then 
 - a prime raised to an exponent greater than one, which is a product of a prime with itself (such as `25`, which is `5^2^` or `5 x 5`)
 - a product of two or more primes and at least one of them is also raised to an exponent greater than one (such as `175`, which is `7 x 25` or `7 x 5^2^`)
 
+Because the entire set of numbers with these eight codes follows these rules, we can identify any number as prime if it is not one of the other three types, which are all combinations of only primes.
 
+So if we exclude 2 and 3 and include 1, which happens automatically if we stick to only the set of numbers with the eight codes, then we only need to concern ourselves with how these numbers interact in order to identify all primes on the number line. The following table displays this view for numbers 0 through 144 and includes a note describing the calculation used to determine that a number with one of the eight codes is not prime.
+
+| Number | B3:6:8 Code | Prime (Y/N) | Non-Prime Note |
+| ----------- | ----------- | ----------- | ----------- |
+| **0** |     |   |   |
+| **1** | 111 | Y |   |
+| **2** |     |   |   |
+| **3** |     |   |   |
+| **4** |     |   |   |
+| **5** | 255 | Y |   |
+| **6** |     |   |   |
+| **7** | 117 | Y |   |
+| **8** |     |   |   |
+| **9** |     |   |   |
+| **10** |     |   |   |
+| **11** | 253 | Y |   |
+| **12** |     |   |   |
+| **13** | 115 | Y |   |
+| **14** |     |   |   |
+| **15** |     |   |   |
+| **16** |     |   |   |
+| **17** | 251 | Y |   |
+| **18** |     |   |   |
+| **19** | 113 | Y |   |
+| **20** |     |   |   |
+| **21** |     |   |   |
+| **22** |     |   |   |
+| **23** | 257 | Y |   |
+| **24** |     |   |   |
+| **25** | 111 | N | square (5^2^) |
+| **26** |     |   |   |
+| **27** |     |   |   |
+| **28** |     |   |   |
+| **29** | 255 | Y |   |
+| **30** |     |   |   |
+| **31** | 117 | Y |   |
+| **32** |     |   |   |
+| **33** |     |   |   |
+| **34** |     |   |   |
+| **35** | 253 | N | product (5 x 7) |
+| **36** |     |   |   |
+| **37** | 115 | Y |   |
+| **38** |     |   |   |
+| **39** |     |   |   |
+| **40** |     |   |   |
+| **41** | 251 | Y |   |
+| **42** |     |   |   |
+| **43** | 113 | Y |   |
+| **44** |     |   |   |
+| **45** |     |   |   |
+| **46** |     |   |   |
+| **47** | 257 | Y |   |
+| **48** |     |   |   |
+| **49** | 111 | N | square (7^2^) |
+| **50** |     |   |   |
+| **51** |     |   |   |
+| **52** |     |   |   |
+| **53** | 255 | Y |   |
+| **54** |     |   |   |
+| **55** | 117 | N | product (5 x 11) |
+| **56** |     |   |   |
+| **57** |     |   |   |
+| **58** |     |   |   |
+| **59** | 253 | Y |   |
+| **60** |     |   |   |
+| **61** | 115 | Y |   |
+| **62** |     |   |   |
+| **63** |     |   |   |
+| **64** |     |   |   |
+| **65** | 251 | N | product (5 x 13) |
+| **66** |     |   |   |
+| **67** | 113 | Y |   |
+| **68** |     |   |   |
+| **69** |     |   |   |
+| **70** |     |   |   |
+| **71** | 257 | Y |   |
+| **72** |     |   |   |
+| **73** | 111 | Y |   |
+| **74** |     |   |   |
+| **75** |     |   |   |
+| **76** |     |   |   |
+| **77** | 255 | N | product (7 x 11) |
+| **78** |     |   |   |
+| **79** | 117 | Y |   |
+| **80** |     |   |   |
+| **81** |     |   |   |
+| **82** |     |   |   |
+| **83** | 253 | Y |   |
+| **84** |     |   |   |
+| **85** | 115 | N | product (5 x 17) |
+| **86** |     |   |   |
+| **87** |     |   |   |
+| **88** |     |   |   |
+| **89** | 251 | Y |   |
+| **90** |     |   |   |
+| **91** | 113 | N | product (7 x 13) |
+| **92** |     |   |   |
+| **93** |     |   |   |
+| **94** |     |   |   |
+| **95** | 257 | N | product (5 x 19) |
+| **96** |     |   |   |
+| **97** | 111 | Y |   |
+| **98** |     |   |   |
+| **99** |     |   |   |
+| **100** |     |   |   |
+| **101** | 255 | Y |   |
+| **102** |     |   |   |
+| **103** | 117 | Y |   |
+| **104** |     |   |   |
+| **105** |     |   |   |
+| **106** |     |   |   |
+| **107** | 253 | Y |   |
+| **108** |     |   |   |
+| **109** | 115 | Y |   |
+| **110** |     |   |   |
+| **111** |     |   |   |
+| **112** |     |   |   |
+| **113** | 251 | Y |   |
+| **114** |     |   |   |
+| **115** | 113 | Y |   |
+| **116** |     |   |   |
+| **117** |     |   |   |
+| **118** |     |   |   |
+| **119** | 257 | N | product (7 x 17) |
+| **120** |     |   |   |
+| **121** | 111 | N | square (11^2^) |
+| **122** |     |   |   |
+| **123** |     |   |   |
+| **124** |     |   |   |
+| **125** | 255 | N | cube (5^3^) |
+| **126** |     |   |   |
+| **127** | 117 | Y |   |
+| **128** |     |   |   |
+| **129** |     |   |   |
+| **130** |     |   |   |
+| **131** | 253 | Y |   |
+| **132** |     |   |   |
+| **133** | 115 | N | product (7 x 19) |
+| **134** |     |   |   |
+| **135** |     |   |   |
+| **136** |     |   |   |
+| **137** | 251 | Y |   |
+| **138** |     |   |   |
+| **139** | 113 | Y |   |
+| **140** |     |   |   |
+| **141** |     |   |   |
+| **142** |     |   |   |
+| **143** | 257 | N | product (11 x 13) |
+| **144** |     |   |   |
 
 
