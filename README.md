@@ -1,5 +1,9 @@
 # Efficient Identification of Primes
 
+Author: Kilton Hopkins
+Email: kiltonhopkins@me.com
+Public release: 10/24/2024
+
 This brief paper describes a robust pattern of prime numbers and explains how to use that pattern to efficiently identify primes. Examples are provided throughout the text. An additional data file containing the first one million primes is also provided in comma-separated (CSV) format.
 
 ## Introduction
@@ -335,7 +339,7 @@ This is, in fact, what we see. The following table shows the counts of each type
 
 Every one of these eight identities is one number away from a whole multiple of 6, either in the +1 or the -1 direction. And because every prime number (excluding 2 and 3) is one of the eight identities, we should see that every prime number is either one less or one more than a whole multiple of 6.
 
-Indeed, that is what we see. The following table is a short listing of prime numbers along with their nearest multiple of 6 and a column to display whether each prime is a +1 or a -1 relative to its nearest whole multiple of 6.
+Indeed, that is what we see. The following table is a short listing of randomly selected prime numbers along with their nearest multiple of 6 and a column to display whether each prime is a +1 or a -1 relative to its nearest whole multiple of 6.
 
 | Prime | Nearest 6x | +/- |
 | ----------- | ----------- | ----------- |
@@ -361,3 +365,13 @@ With the pattern described above, an efficient way to find all primes would be a
 - At each multiple of 6, look at the numbers one below and one above
 - Each number in the -1 and +1 pair will either be a prime or the result of combining primes we already have in the list
 - Whenever we have reached our desired stopping point on the number line, conclude by manually placing 2 and 3 at the start of the list
+
+The basis of efficiency is the clarity and certainty of the closed set. For every prime that we find, we can project its impact out ahead and map only the multiples of that prime which matter. The square of a newly uncovered prime and the products it makes with all of the other known numbers in the set of eight B24 identities are immediately calculable and neccessary for identifying primes.
+
+The entire collection of calculations required to identify primes is defined by these projected impacts. If the map of projected products is calculated thoroughly, we should never need to perform a single test to identify the primes on the number line as we arrive at their position. We will already know with certainty that they are primes. We never need 2 or 3 in the process of the product calculations.
+
+## Efficient Initial Primality Testing Step
+
+An efficient first step in primality testing is to calculate the B24 value of the arbitrary number being tested, which is simply the modulus value measured by 24. If the mod 24 value is not 1, 5, 7, 11, 13, 17, 19, or 23 then the number is not prime.
+
+An interesting example is the number 561, which is a Carmichael number and a number that exhibits some properties suggesting it may be prime. Because 561 is a B24:9 we can conclude a primality test with only the modulus calculation.
