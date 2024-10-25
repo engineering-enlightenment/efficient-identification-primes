@@ -376,4 +376,4 @@ The entire collection of calculations required to identify primes is defined by 
 
 An efficient first step in primality testing is to calculate the B24 value of the arbitrary number being tested, which is simply the modulus value measured by 24. If the mod 24 value is not 1, 5, 7, 11, 13, 17, 19, or 23 then the number is not prime.
 
-An interesting example is the number 561, which is a Carmichael number and a number that exhibits some properties suggesting it may be prime. Because 561 is a B24:9 we can conclude a primality test with only the modulus calculation.
+An interesting example is the number 561, which is a Carmichael number and a number that exhibits some properties suggesting it may be prime. Because 561 is a B24:9 we can conclude a primality test as negative (not a prime) with only the modulus calculation.
