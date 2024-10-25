@@ -1,7 +1,9 @@
 # Efficient Identification of Primes
 
 Author: Kilton Hopkins
+
 Email: kiltonhopkins@me.com
+
 Public release: 10/24/2024
 
 This brief paper describes a robust pattern of prime numbers and explains how to use that pattern to efficiently identify primes. Examples are provided throughout the text. An additional data file containing the first one million primes is also provided in comma-separated (CSV) format.
